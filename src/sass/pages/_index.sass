@@ -1,0 +1,528 @@
+.banner
+    background-image: url(../images/banner.jpg)
+    height: 667px
+    position: relative
+    
+    .banner__content
+        
+        .banner__content--big
+            position: absolute
+            font-size: 385.22px
+            font-family: "UTM1"
+            color: rgba(255, 255, 255, 0.702)
+            top: 50%
+            transform: translateY(-50%)
+            padding: 0 15px
+            
+        .banner__content--normal
+            font-size: 97.59px
+            font-family: "UVFDidot"
+            color: rgba(255, 255, 255, 0.702)
+            position: absolute
+            top: 35%
+            transform: translateX(125%)
+            
+            
+
+        .banner__content--small
+            position: absolute
+            font-size: 2rem
+            font-family: "Lobster"
+            color: rgba(255, 255, 255, 0.702)
+            right: 300px
+            top: 470px
+// menu
+.menu
+    height: 160px
+    background-color: black
+    padding: 0 15px
+    &-list
+        @include flex
+        padding-top: 15px  
+        &__logo
+            position: relative
+            &--bg
+                position: absolute
+                top: 0
+                left: 18px
+            &--text
+                text-align: center
+                margin-top: 32px
+                h2 
+                    font-size: 29px
+                    font-family: "UTM"
+                    color: rgb(230, 174, 72)
+                    font-weight: 100
+                    line-height: 1
+                    
+                h4  
+                    font-size: 16px
+                    font-family: "roboto"
+                    color: rgb(230, 174, 72)
+                    line-height: 1.5
+        .menu-list__option
+            @include flex
+            .menu-list__item
+                .menu-list__link
+                    font-size: 13px
+                    font-family: "Times New Roman"
+                    text-transform: uppercase
+                    color: white
+                    padding-right: 40px
+                    font-weight: 200
+                    &:hover
+                        color: rgb(230, 174, 92)
+                        transition: 0.5s
+                &:last-child
+                    .menu-list__link
+                        padding-right: 0
+//describe
+.describe
+    position: relative
+    
+    &__left
+        @include position
+        width: 532px
+        height: auto
+        z-index: -1
+        
+    &__right
+        @include position
+        width: 180px
+        height: auto
+        
+    &__text
+        @include small-container 
+        text-align: center
+        margin: 0 auto
+        z-index: 100
+        padding-top: 100px
+        &--heading
+            margin-bottom: 30px
+        &--line
+            margin-bottom: 30px
+        &--content
+            font-size: 16px
+            line-height: 1.5
+            opacity: 0.8
+            margin-bottom: 30px
+//product_sale
+.product
+    height: 1012px
+    .product-sale
+        padding: 100px 15px
+        position: relative
+        display: flex
+    
+    .product-img
+        width: 100%
+        
+    .product-item
+        @include small-container 
+        background-color: white
+        height: 666px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%)
+        display: flex
+        padding-top: 95px
+        
+        &__img 
+            margin-left: 10.4%
+            margin-right: 30px
+            width: 48.5714%
+    
+            text-align: center
+            position: relative
+            &--box
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+            &--span
+                span 
+                    position: absolute
+                    left: 20px
+                    top: 20px
+                    z-index: 2
+                    font-size: 24px
+                    color: white
+                    transform: rotate(-45deg)
+                    tra
+
+                img 
+                    @include position
+                    z-index: 1
+                
+        &__info
+            width: 27.724%
+            &--heading
+                font-size: 25px
+                margin-bottom: 10px
+            &--arrow
+                display: block
+            &--price
+                font-size: 34px
+                font-family: "UTM2"
+                color: $color_yelow
+                margin: 20px 0
+            &--des
+                font-size: 13px
+                margin: 40px 0 50px 0
+                line-height: 1.4
+                color: $color_text
+            .product-table
+                display: flex
+                flex-wrap: wrap
+                width: 100%
+                &__item
+                    width: 50%
+                    border: 1px solid $color_yelow
+                    text-align: center
+                    padding: 18px 40px
+                    h4 
+                        font-family: "UTML2"
+                        font-size: 34px
+                        color: $color_yelow
+                        text-transform: uppercase
+                    h5
+                        
+                        font-family: "Times New Roman"
+                        color: $color_yelow
+                        font-size: 14px
+                        text-transform: uppercase
+// new product
+.newproduct
+    margin-top: 150px
+    text-align: center
+    &__headding
+        margin-bottom: 20px
+        font-size: 21px
+    &__list
+        display: flex
+        justify-content: flex-start
+        .newproduct-item
+            width: 25%
+            padding: 0 15px
+            position: relative
+            margin-top: 30px
+            .newproduct-bot
+                display: flex
+                justify-content: space-around
+                background-color: black
+                margin: 10px 0
+                visibility: hidden
+                i 
+                    color: white
+                    padding: 10px
+                    font-size: 18px
+                    
+
+            &--span
+                position: absolute
+                top: 0 
+                left: 15px
+                z-index: 1
+            &--img
+                margin-top: 30px
+                height: 282px
+                
+            &--tag
+                font-size: 20px
+                z-index: 2
+                position: absolute
+                top: 8px
+                left: 18px
+                color: white
+                transform: rotate(-45deg)
+            h1 
+                font-family: 'Times New Roman', Times, serif
+                font-size: 14px
+                margin-bottom: 10px
+            h3 
+                color: $color_yelow
+                font-size: 21px
+                margin-bottom: 20px
+                font-family: "UTM Caviar"
+                position: relative
+                &::before
+                    font-size: 14px
+                    content: 'đ'
+                    position: absolute
+                    left:  56%
+                    top: -1px
+                
+
+                span 
+                    margin-left: 15px
+                    font-size: 12px
+                    color: $color_text
+                    font-family: "UTML2"
+                    text-decoration: line-through
+                    position: relative
+                    &::before
+                        font-size: 12px
+                        content: 'đ'
+                        position: absolute
+                        left:  100%
+                        top: -1px
+            &--bitton
+                &:hover
+                    background-color: $color_yelow
+            &:hover
+                .newproduct-bot
+                    visibility: visible
+// gallery image
+.gallery
+    display: flex 
+    flex-wrap: wrap
+    flex-direction: row
+    width: 100%
+    margin-top: 100px
+    &__img 
+        width: 25%
+        position: relative
+        &:hover
+            .gallery__img--des
+                visibility: visible
+                .gallery__img--hover
+                    &::after, &::before
+                        width: 100%
+                    .gallery__img--hover2
+                        &::after, &::before
+                            height: 100%
+
+                        
+                        
+        
+        &--item 
+            width: 100%
+            height: 100%
+            
+            img 
+                width: 100%
+                height: 100%
+                
+        &--des
+            color: $color_white
+            line-height: 1.5
+            position: absolute
+            visibility: hidden  
+            text-align: center
+            @include transform
+            p 
+                font-size: 24px
+            .gallery__img--hover
+                padding: 15px
+                h1
+                    font-size: 72px
+                
+                &::after
+                    content: ''
+                    position: absolute
+                    width: 0%
+                    left: 0
+                    top: 30%
+                    height: 1px
+                    background-color: $color_white
+                    transition: all .5s ease-in-out
+                    
+                
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 0%
+                    left: 0
+                    top: 90%
+                    height: 1px
+                    background-color: $color_white
+                    transition: all .5s ease-in-out
+                .gallery__img--hover2
+                    &::after
+                        content: ''
+                        position: absolute
+                        width: 1px
+                        left: 2%    
+                        top: 10%
+                        height: 0%
+                        background-color: $color_white
+                        transition: all .5s ease-in-out
+                    
+                
+                    &::before
+                        content: ''
+                        position: absolute
+                        width: 1px
+                        left: 95%
+                        top: 10%
+                        height: 0%
+                        background-color: $color_white
+                        transition: all .5s ease-in-out
+
+// hot product
+.hotproduct
+    margin-top: 100px
+    text-align: center
+    &__headding
+        margin-bottom: 20px
+        font-size: 21px
+    &__list
+        display: flex
+        justify-content: flex-start
+        .hotproduct-item
+            width: 25%
+            padding: 0 15px
+            position: relative
+            margin-top: 30px
+            &--span
+                position: absolute
+                top: 0 
+                left: 15px
+                z-index: 1
+            &--img
+                margin-top: 30px
+                height: 282px
+                
+            &--tag
+                font-size: 20px
+                z-index: 2
+                position: absolute
+                top: 8px
+                left: 18px
+                color: white
+                transform: rotate(-45deg)
+            h1 
+                font-family: 'Times New Roman', Times, serif
+                font-size: 14px
+                margin-bottom: 10px
+            h3 
+                color: $color_yelow
+                font-size: 21px
+                margin-bottom: 20px
+                font-family: "UTM Caviar"
+                position: relative
+                &::before
+                    font-size: 14px
+                    content: 'đ'
+                    position: absolute
+                    left:  54%
+                    top: -1px
+                
+                span 
+                    margin-left: 20px
+                    color: $color_text
+                    font-size: 12px
+                    font-family: "UTML2"
+                    text-decoration: line-through
+                    position: relative
+                    &::before
+                        font-size: 12px
+                        content: 'đ'
+                        position: absolute
+                        left:  100%
+                        top: -1px
+            &--bitton
+                &:hover
+                    background-color: $color_yelow
+// blog
+.blog
+    margin-top: 100px
+    .blog-wrap
+        display: flex
+        .blog-new
+            width: 66.677777777777%
+            &__header
+                text-align: center
+                margin-bottom: 40px
+            
+                &__heading
+                    font-size: 21px
+                    margin-bottom: 10px
+                &__arrow
+                    margin-bottom: 10px
+            .blog-new__list
+                display: flex
+                justify-content: flex-start
+                .blog-new__item
+                    width: 50%
+                    padding: 0 15px
+                    img 
+                        width: 364px
+                        height: auto
+                        margin-bottom: 25px
+                    h2
+                        font-size: 18px
+                        text-transform: uppercase
+                        margin-bottom: 8px
+                    span
+                        display: inline-block
+                        color: $color_text
+                        margin-bottom: 15px
+                    p 
+                        display: inline-block
+                        font-size: 14px
+                        margin-bottom: 10px
+                    a 
+                        color: $color_text
+                        margin-bottom: 10px
+                    
+        .blog-customer
+            width: 33.333333333333%
+            text-align: center
+            padding: 0 15px
+            &__heading
+                font-size: 21px
+
+            img
+                margin-bottom: 40px
+            &__info
+                .fa.fa-quote-right
+                    position: relative
+                    width: 63px
+                    height: 63px
+                    background-color: $color_yelow
+                    border-radius: 100%
+                    margin-bottom: 10px
+                    &::before
+                        position: absolute
+                        left: 25%
+                        top: 25%
+                        transform: translate(50%,50%)
+                        color: white
+            p
+                font-size: 14px
+                line-height: 1.5
+                color: $color_text
+                margin-bottom: 5px
+            a 
+                color: $color_text
+            .blog-customer__info--avatar
+                h3 
+                    font-size: 14px
+                    text-transform: uppercase
+                    font-weight: 300
+                i 
+                    color: $color_text
+                    font-style: italic
+.fa.fa-circle 
+    font-size: 10px
+    margin: 50px 10px
+
+// brand
+
+                          
+                        
+
+    
+   
+
+
+                    
+            
+
+
+        
+
+        
+        

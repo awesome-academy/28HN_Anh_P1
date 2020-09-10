@@ -1,0 +1,21 @@
+.banner {
+  background-image: url(../images/banner.jpg);
+  height: 664px;
+  background-size: cover;
+  position: relative;
+}
+
+.banner__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner__content--big {
+  font-size: 25rem;
+  font-family: "UTM1";
+}
+.banner__content--normal {
+  font-size: 11rem;
+  font-family: "UVFDidot";
+}
