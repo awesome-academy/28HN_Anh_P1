@@ -1,28 +1,5 @@
 extends ../layouts/default-layout.pug
-
-mixin productItem(img,tag,span)
-  .newproduct-item
-    img.newproduct-item--img(src=img, alt="")
-    .newproduct-bot
-      i.fa.fa-heart 
-        span Yêu thích
-      i.fa.fa-chart-bar 
-        span So sánh
-    img.newproduct-item--span(src=tag, alt="")
-    span.newproduct-item--tag= span
-
-    h1 Rượu vang Đà lạt
-    h3.newproduct-item--price 370.000
-      span.newproduct-item--saleprice 450.000
-    button.newproduct-item--bitton ADD TO CART
-
-mixin productHotItem(img)
-  .hotproduct-item
-    img.hotproduct-item--img(src=img, alt="")
-    h1 Rượu vang Đà lạt
-    h3.hotproduct-item--price 370.000
-      span.hotproduct-item--saleprice 450.000
-    button.hotproduct-item--bitton ADD TO CART
+include ../base/mixins.pug
 block content
   // banner
   section.banner
@@ -30,38 +7,8 @@ block content
       h2.banner__content--big Rượu
       h3.banner__content--normal Vang Đỏ
       h4.banner__content--small Since 1980
-
-  //menu
-  - 
-    var list = ["Trang chủ","Riệu Vang Đỏ","Rượu Vang Trắng","Champagne","Thông tin","Blog","Liên hệ"]
-
-  section.menu
-    .menu-list.container
-      .menu-list__logo
-        .menu-list__logo--text
-          h2 Wine hourse
-          h4 Since 1980
-          img(src="../assets/images/logo.png", alt="")
-        .menu-list__logo--bg
-          img(src="../assets/images/Vector Smart Object.png", alt="")
-      .menu__list
-        a.menu__list-item(href="#") Trang chủ
-        .menu__mega
-          a.menu__list-item(href="#") Rượu vang đỏ
-            .menu__submenu
-              - for (var i = 0; i < 3; i++)
-                .menu__submenu-list
-                    a.menu__submenu-list-title: h3 Rượu ngoại 
-                    - submenuItems = ["Rượu Chivas", "Hàng độc - Rượu độc đáo", "Johnnie Walker", "Rượu Whisky", "Rượu Remy Martin", "Rượu Glenmorangie"]
-                    each val in submenuItems
-                        a=val
-              .menu__submenu-image
-                img(src="../assets/images/mega.png", alt="")
-        a.menu__list-item(href="#") Rượu vang trắng
-        a.menu__list-item(href="#") Chanpagne
-        a.menu__list-item(href="#") Thông tin 
-        a.menu__list-item(href="#") Blog
-        a.menu__list-item(href="#") Liên hệ
+  block menu-mega
+    include menu-mega.pug
   // descibe
   section.describe
     img.describe__left(src="../assets/images/introduce.jpg", alt="")
@@ -86,10 +33,7 @@ block content
               img(src="../assets/images/sale.png", alt="")
 
           .product-item__info
-            h1.product-item__info--heading RƯỢU NHO NĂM 1987
-            img.product-item__info--arrow(src="../assets/images/titleleft-dark.png", alt="")
-            h3.product-item__info--price 330.000
-            
+            +titleItem
             button.product-item__info--button ADD TO CART
             p.product-item__info--des Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ oxy hóa của protein béo.
             .product-table
@@ -178,10 +122,7 @@ block content
               i.fa.fa-circle
             a(href="")
               i.fa.fa-circle
-  // brand logo
-  section.brand
-    .brand-logo.container
-      img(src="../assets/images/brand_logo.png", alt="")
+  
 
 
               

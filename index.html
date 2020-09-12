@@ -11,23 +11,25 @@
   </head>
   <body>
     <div class="app">
-      <section class="header">
-        <div class="container header-nav">
-          <div class="header-nav__menu">
-            <ul class="header-nav__menu-list">
-              <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Tài khoản của tôi  </a></li>
-              <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Trạng thái đơn hàng  </a></li>
-              <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Danh sách ưa thích  </a></li>
-              <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Giỏ hàng  </a></li>
-              <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Đăng nhập  </a></li>
-              <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Đăng ký </a></li>
-            </ul>
-          </div>
-          <div class="header-nav__search">
-            <input class="header-nav__search-input" type="text" placeholder="Tìm kiếm gì ở đây ..."><i class="fas fa-search"></i>
+      <header>
+        <div class="header-dark">
+          <div class="container header-nav">
+            <div class="header-nav__menu">
+              <ul class="header-nav__menu-list">
+                <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Tài khoản của tôi  </a></li>
+                <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Trạng thái đơn hàng  </a></li>
+                <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Danh sách ưa thích  </a></li>
+                <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Giỏ hàng  </a></li>
+                <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Đăng nhập  </a></li>
+                <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Đăng ký </a></li>
+              </ul>
+            </div>
+            <div class="header-nav__search">
+              <input class="header-nav__search-input" type="text" placeholder="Tìm kiếm gì ở đây ..."><i class="fas fa-search"></i>
+            </div>
           </div>
         </div>
-      </section>
+      </header>
       <!-- banner-->
       <section class="banner">
         <div class="banner__content container">
@@ -36,7 +38,6 @@
           <h4 class="banner__content--small">Since 1980</h4>
         </div>
       </section>
-      <!--menu-->
       <section class="menu">
         <div class="menu-list container">
           <div class="menu-list__logo">
@@ -46,14 +47,21 @@
             </div>
             <div class="menu-list__logo--bg"><img src="../assets/images/Vector Smart Object.png" alt=""></div>
           </div>
-          <div class="menu-list__option">
-            <li class="menu-list__item"><a class="menu-list__link" href="">Trang chủ</a></li>
-            <li class="menu-list__item"><a class="menu-list__link" href="">Riệu Vang Đỏ</a></li>
-            <li class="menu-list__item"><a class="menu-list__link" href="">Rượu Vang Trắng</a></li>
-            <li class="menu-list__item"><a class="menu-list__link" href="">Champagne</a></li>
-            <li class="menu-list__item"><a class="menu-list__link" href="">Thông tin</a></li>
-            <li class="menu-list__item"><a class="menu-list__link" href="">Blog</a></li>
-            <li class="menu-list__item"><a class="menu-list__link" href="">Liên hệ</a></li>
+          <div class="menu__list"><a class="menu__list-item" href="#">Trang chủ</a>
+            <div class="menu__mega"><a class="menu__list-item" href="#">Rượu vang đỏ</a>
+              <div class="menu__submenu">
+                <div class="menu__submenu-list"><a class="menu__submenu-list-title">
+                    <h3>Rượu ngoại <a>Rượu Chivas</a><a>Hàng độc - Rượu độc đáo</a><a>Johnnie Walker</a><a>Rượu Whisky</a><a>Rượu Remy Martin</a><a>Rượu Glenmorangie</a>
+                    </h3></a></div>
+                <div class="menu__submenu-list"><a class="menu__submenu-list-title">
+                    <h3>Rượu ngoại <a>Rượu Chivas</a><a>Hàng độc - Rượu độc đáo</a><a>Johnnie Walker</a><a>Rượu Whisky</a><a>Rượu Remy Martin</a><a>Rượu Glenmorangie</a>
+                    </h3></a></div>
+                <div class="menu__submenu-list"><a class="menu__submenu-list-title">
+                    <h3>Rượu ngoại <a>Rượu Chivas</a><a>Hàng độc - Rượu độc đáo</a><a>Johnnie Walker</a><a>Rượu Whisky</a><a>Rượu Remy Martin</a><a>Rượu Glenmorangie</a>
+                    </h3></a></div>
+                <div class="menu__submenu-image"><img src="../assets/images/mega.png" alt=""></div>
+              </div>
+            </div><a class="menu__list-item" href="#">Rượu vang trắng</a><a class="menu__list-item" href="#">Chanpagne</a><a class="menu__list-item" href="#">Thông tin </a><a class="menu__list-item" href="#">Blog</a><a class="menu__list-item" href="#">Liên hệ</a>
           </div>
         </div>
       </section>
@@ -75,8 +83,8 @@
                 <div class="product-item__img--span"><span>Sale</span><img src="../assets/images/sale.png" alt=""></div>
               </div>
               <div class="product-item__info">
-                <h1 class="product-item__info--heading">RƯỢU NHO NĂM 1987</h1><img class="product-item__info--arrow" src="../assets/images/titleleft-dark.png" alt="">
-                <h3 class="product-item__info--price">330.000</h3>
+                <h1 class="product-item__info--heading">RƯỢU NHO NĂM 1987</h1><img class="product-item__info--arrow" src="../assets/images/titleleft-dark.png" alt=""/>
+                <h3 class="product-item__info--price">330.000đ</h3>
                 <button class="product-item__info--button">ADD TO CART</button>
                 <p class="product-item__info--des">Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ oxy hóa của protein béo.</p>
                 <div class="product-table">
@@ -107,26 +115,22 @@
         <h1 class="newproduct__headding">SẢN PHẨM MỚI</h1><img class="newproduct__line" src="../assets/images/title_dark.png" alt="">
         <div class="newproduct__list container">
           <div class="newproduct-item"><img class="newproduct-item--img" src="../assets/images/newproduct_1.png" alt=""/>
-            <div class="newproduct-bot"><i class="fa fa-heart"> <span>Yêu thích</span></i><i class="fa fa-chart-bar"> <span>So sánh</span></i></div><img class="newproduct-item--span" src="../assets/images/sale2.png" alt=""/><span class="newproduct-item--tag">Sale</span>
-            <h1>Rượu vang Đà lạt</h1>
+            <div class="newproduct-bot"><i class="fa fa-heart"> <span>Yêu thích</span></i><i class="fa fa-chart-bar"> <span>So sánh</span></i></div><img class="newproduct-item--span" src="../assets/images/sale2.png" alt=""/><span class="newproduct-item--tag">Sale</span><a href="detail.html">Rượu vang Đà lạt</a>
             <h3 class="newproduct-item--price">370.000<span class="newproduct-item--saleprice">450.000</span></h3>
             <button class="newproduct-item--bitton">ADD TO CART</button>
           </div>
           <div class="newproduct-item"><img class="newproduct-item--img" src="../assets/images/newproduct_2.png" alt=""/>
-            <div class="newproduct-bot"><i class="fa fa-heart"> <span>Yêu thích</span></i><i class="fa fa-chart-bar"> <span>So sánh</span></i></div><img class="newproduct-item--span" src="../assets/images/new.png" alt=""/><span class="newproduct-item--tag">New</span>
-            <h1>Rượu vang Đà lạt</h1>
+            <div class="newproduct-bot"><i class="fa fa-heart"> <span>Yêu thích</span></i><i class="fa fa-chart-bar"> <span>So sánh</span></i></div><img class="newproduct-item--span" src="../assets/images/new.png" alt=""/><span class="newproduct-item--tag">New</span><a href="detail.html">Rượu vang Đà lạt</a>
             <h3 class="newproduct-item--price">370.000<span class="newproduct-item--saleprice">450.000</span></h3>
             <button class="newproduct-item--bitton">ADD TO CART</button>
           </div>
           <div class="newproduct-item"><img class="newproduct-item--img" src="../assets/images/newproduct_3.png" alt=""/>
-            <div class="newproduct-bot"><i class="fa fa-heart"> <span>Yêu thích</span></i><i class="fa fa-chart-bar"> <span>So sánh</span></i></div><img class="newproduct-item--span" src="../assets/images/hot.png" alt=""/><span class="newproduct-item--tag">Hot</span>
-            <h1>Rượu vang Đà lạt</h1>
+            <div class="newproduct-bot"><i class="fa fa-heart"> <span>Yêu thích</span></i><i class="fa fa-chart-bar"> <span>So sánh</span></i></div><img class="newproduct-item--span" src="../assets/images/hot.png" alt=""/><span class="newproduct-item--tag">Hot</span><a href="detail.html">Rượu vang Đà lạt</a>
             <h3 class="newproduct-item--price">370.000<span class="newproduct-item--saleprice">450.000</span></h3>
             <button class="newproduct-item--bitton">ADD TO CART</button>
           </div>
           <div class="newproduct-item"><img class="newproduct-item--img" src="../assets/images/newproduct_4.png" alt=""/>
-            <div class="newproduct-bot"><i class="fa fa-heart"> <span>Yêu thích</span></i><i class="fa fa-chart-bar"> <span>So sánh</span></i></div><img class="newproduct-item--span" alt=""/><span class="newproduct-item--tag"></span>
-            <h1>Rượu vang Đà lạt</h1>
+            <div class="newproduct-bot"><i class="fa fa-heart"> <span>Yêu thích</span></i><i class="fa fa-chart-bar"> <span>So sánh</span></i></div><img class="newproduct-item--span" alt=""/><span class="newproduct-item--tag"></span><a href="detail.html">Rượu vang Đà lạt</a>
             <h3 class="newproduct-item--price">370.000<span class="newproduct-item--saleprice">450.000</span></h3>
             <button class="newproduct-item--bitton">ADD TO CART</button>
           </div>
@@ -227,23 +231,19 @@
       <section class="hotproduct">
         <h1 class="hotproduct__headding">SẢN PHẨM BÁN CHẠY</h1><img class="hotproduct__line" src="../assets/images/title_dark.png" alt="">
         <div class="hotproduct__list container">
-          <div class="hotproduct-item"><img class="hotproduct-item--img" src="../assets/images/hotproduct_1.png" alt=""/>
-            <h1>Rượu vang Đà lạt</h1>
+          <div class="hotproduct-item"><img class="hotproduct-item--img" src="../assets/images/hotproduct_1.png" alt=""/><a href="detail.html">Rượu vang Đà lạt</a>
             <h3 class="hotproduct-item--price">370.000<span class="hotproduct-item--saleprice">450.000</span></h3>
             <button class="hotproduct-item--bitton">ADD TO CART</button>
           </div>
-          <div class="hotproduct-item"><img class="hotproduct-item--img" src="../assets/images/hotproduct_2.png" alt=""/>
-            <h1>Rượu vang Đà lạt</h1>
+          <div class="hotproduct-item"><img class="hotproduct-item--img" src="../assets/images/hotproduct_2.png" alt=""/><a href="detail.html">Rượu vang Đà lạt</a>
             <h3 class="hotproduct-item--price">370.000<span class="hotproduct-item--saleprice">450.000</span></h3>
             <button class="hotproduct-item--bitton">ADD TO CART</button>
           </div>
-          <div class="hotproduct-item"><img class="hotproduct-item--img" src="../assets/images/hotproduct_3.png" alt=""/>
-            <h1>Rượu vang Đà lạt</h1>
+          <div class="hotproduct-item"><img class="hotproduct-item--img" src="../assets/images/hotproduct_3.png" alt=""/><a href="detail.html">Rượu vang Đà lạt</a>
             <h3 class="hotproduct-item--price">370.000<span class="hotproduct-item--saleprice">450.000</span></h3>
             <button class="hotproduct-item--bitton">ADD TO CART</button>
           </div>
-          <div class="hotproduct-item"><img class="hotproduct-item--img" src="../assets/images/hotproduct_4.png" alt=""/>
-            <h1>Rượu vang Đà lạt</h1>
+          <div class="hotproduct-item"><img class="hotproduct-item--img" src="../assets/images/hotproduct_4.png" alt=""/><a href="detail.html">Rượu vang Đà lạt</a>
             <h3 class="hotproduct-item--price">370.000<span class="hotproduct-item--saleprice">450.000</span></h3>
             <button class="hotproduct-item--bitton">ADD TO CART</button>
           </div>
@@ -291,10 +291,8 @@
           </div>
         </div>
       </section>
-      <!-- brand logo-->
-      <section class="brand">
-        <div class="brand-logo container"><img src="../assets/images/brand_logo.png" alt=""></div>
-      </section>
+      <section class="brand"></section>
+      <div class="brand-logo container"><img src="../assets/images/brand_logo.png" alt=""></div>
       <section id="footer">
         <div class="footer-wrapper container">
           <div class="footer__item">
