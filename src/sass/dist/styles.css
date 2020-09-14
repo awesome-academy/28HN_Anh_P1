@@ -1,0 +1,139 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/roboto/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: "UTM";
+  src: url("../fonts/UTM/UTM Alpine KT.ttf");
+}
+@font-face {
+  font-family: "UTM1";
+  src: url("../fonts/UTM/UTM Aquarelle.ttf");
+}
+@font-face {
+  font-family: "UTM2";
+  src: url("../fonts/UTM/UTM Caviar.ttf");
+}
+@font-face {
+  font-family: "Lobster";
+  src: url("../fonts/lobster/Lobster_1_4.otf");
+}
+@font-face {
+  font-family: "UVFDidot";
+  src: url("../fonts/UVFDiDot/UVF Didot.ttf");
+}
+@font-face {
+  font-family: "UVFAphroditePro";
+  src: url("../fonts/UVFDiDot/UVF Aphrodite Pro.ttf");
+}
+@font-face {
+  font-family: "UVFBlendaScript";
+  src: url("../fonts/UVFDiDot/UVF Blenda Script.ttf");
+}
+.header {
+  background-image: url(../images/bg-header.png);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 30px;
+}
+
+.container {
+  max-width: 1075px;
+  margin: 0 auto;
+}
+
+.header-nav {
+  font-family: "Times New Roman";
+  text-align: left;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav .header-nav__menu {
+  padding: 10px 0;
+}
+.header-nav .header-nav__menu .header-nav__menu-list {
+  display: flex;
+}
+.header-nav .header-nav__menu .header-nav__menu-list .header-nav__menu-item {
+  margin-right: 2rem;
+}
+.header-nav .header-nav__menu .header-nav__menu-list .header-nav__menu-item .header-nav__menu-link {
+  text-decoration: none;
+  color: #d6d6d6;
+}
+.header-nav .header-nav__menu .header-nav__menu-list .header-nav__menu-item .header-nav__menu-link:hover {
+  color: #e6ae48;
+}
+.header-nav .header-nav__menu .header-nav__menu-list .header-nav__menu-item .header-nav__menu-link::after {
+  content: "-";
+  margin-left: 4px;
+}
+.header-nav .header-nav__search-input {
+  border: 0;
+  outline: none;
+  font-family: "Times New Roman";
+  font-size: 12px;
+  background-color: transparent;
+}
+.header-nav .fa-search {
+  color: #d6d6d6;
+}
+
+.banner {
+  background-image: url(../images/banner.jpg);
+  height: 664px;
+  background-size: cover;
+  position: relative;
+}
+
+.banner__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.banner__content--big {
+  font-size: 30px;
+  font-family: "UTM1";
+}

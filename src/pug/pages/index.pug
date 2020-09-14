@@ -1,0 +1,185 @@
+extends ../layouts/default-layout.pug
+
+mixin productItem(img,tag,span)
+  .newproduct-item
+    img.newproduct-item--img(src=img, alt="")
+    .newproduct-bot
+      i.fa.fa-heart 
+        span Yêu thích
+      i.fa.fa-chart-bar 
+        span So sánh
+    img.newproduct-item--span(src=tag, alt="")
+    span.newproduct-item--tag= span
+
+    h1 Rượu vang Đà lạt
+    h3.newproduct-item--price 370.000
+      span.newproduct-item--saleprice 450.000
+    button.newproduct-item--bitton ADD TO CART
+
+mixin productHotItem(img)
+  .hotproduct-item
+    img.hotproduct-item--img(src=img, alt="")
+    h1 Rượu vang Đà lạt
+    h3.hotproduct-item--price 370.000
+      span.hotproduct-item--saleprice 450.000
+    button.hotproduct-item--bitton ADD TO CART
+block content
+  // banner
+  section.banner
+    .banner__content.container
+      h2.banner__content--big Rượu
+      h3.banner__content--normal Vang Đỏ
+      h4.banner__content--small Since 1980
+
+  //menu
+  - 
+    var list = ["Trang chủ","Riệu Vang Đỏ","Rượu Vang Trắng","Champagne","Thông tin","Blog","Liên hệ"]
+
+  section.menu
+    .menu-list.container
+      .menu-list__logo
+        .menu-list__logo--text
+          h2 Wine hourse
+          h4 Since 1980
+          img(src="../assets/images/logo.png", alt="")
+        .menu-list__logo--bg
+          img(src="../assets/images/Vector Smart Object.png", alt="")
+        
+      .menu-list__option
+        each item in list 
+          li.menu-list__item
+            a(href="").menu-list__link= item
+  // descibe
+  section.describe
+    img.describe__left(src="../assets/images/introduce.jpg", alt="")
+    img.describe__right(src="../assets/images/introduce1.png",, alt="")
+    .describe__text
+      h1.describe__text--heading Giới thiệu
+      img.describe__text--line(src="../assets/images/title_dark.png",, alt="")
+      p.describe__text--content  Mriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faciteorum claritatem. Investigtiones demonstraverunt lectores legere me lius quod ii legunt saepius.Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putam
+      button.describe__text--button XEM THÊM
+  //product
+
+  section.product
+    .container
+      .product-sale
+        img.product-img(src="../assets/images/hotdeal.jpg", alt="")
+        .product-item
+          .product-item__img
+            .product-item__img--box
+              img(src="../assets/images/hotdeal_box.png", alt="")
+            .product-item__img--span
+              span Sale
+              img(src="../assets/images/sale.png", alt="")
+
+          .product-item__info
+            h1.product-item__info--heading RƯỢU NHO NĂM 1987
+            img.product-item__info--arrow(src="../assets/images/titleleft-dark.png", alt="")
+            h3.product-item__info--price 330.000
+            
+            button.product-item__info--button ADD TO CART
+            p.product-item__info--des Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ oxy hóa của protein béo.
+            .product-table
+              -var list= [{number:'334',time:'ngày'},{number:'26',time:'giờ'},{number:'60',time:'phút '},{number:'15',time:'giây'}]
+                each value in list
+                  .product-table__item
+                    h4 #{value.number}
+                    h5 #{value.time}
+
+  // newproduct
+  section.newproduct
+    h1.newproduct__headding SẢN PHẨM MỚI
+    img.newproduct__line(src="../assets/images/title_dark.png", alt="")
+    .newproduct__list.container
+      +productItem("../assets/images/newproduct_1.png","../assets/images/sale2.png","Sale")
+      +productItem("../assets/images/newproduct_2.png","../assets/images/new.png","New")
+      +productItem("../assets/images/newproduct_3.png","../assets/images/hot.png","Hot")
+      +productItem("../assets/images/newproduct_4.png")
+  
+  // gallery image
+  section#gallery.gallery
+    - var list =["staticblock_1.png","staticblock_2.jpg","staticblock_3.png","staticblock_4.png","staticblock_5.png","staticblock_6.png","staticblock_7.png","staticblock_8.png"]
+        each url in list 
+          .gallery__img
+              .gallery__img--item
+                  img(src='../assets/images/' + url , alt="staticblock")
+              .gallery__img--des
+                  p 1987
+                  .gallery__img--hover
+                    .gallery__img--hover2
+                      h1 RƯỢU
+  // hot product
+  section.hotproduct
+    h1.hotproduct__headding SẢN PHẨM BÁN CHẠY
+    img.hotproduct__line(src="../assets/images/title_dark.png", alt="")
+    .hotproduct__list.container
+      +productHotItem("../assets/images/hotproduct_1.png")
+      +productHotItem("../assets/images/hotproduct_2.png")
+      +productHotItem("../assets/images/hotproduct_3.png")
+      +productHotItem("../assets/images/hotproduct_4.png")
+  // blog
+  section.blog
+    .blog-wrap.container
+      .blog-new
+        .blog-new__header
+          h1.blog-new__header--heading Tin tức và blog
+          img.blog-new__header--arrow(src="../assets/images/title_dark.png", alt="")
+        .blog-new__list
+          .blog-new__item
+            img(src="../assets/images/blog_1.png", alt="")
+            h2 Vang thang Long classic
+            span Đăng bởi Giangle | 30/06/2015 | 60 bình luận
+            p.
+                Vang nổ Thang Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ
+                rượu nhẹ, bột ga đầy trắng mịn.
+                Van nổ Thăng Long ...
+            a(href="") Read more
+          .blog-new__item
+            img(src="../assets/images/blog_2.png", alt="")
+            h2 Vang thang Long classic
+            span Đăng bởi Giangle | 30/06/2015 | 60 bình luận
+            p.
+                Vang nổ Thang Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ
+                rượu nhẹ, bột ga đầy trắng mịn.
+                Van nổ Thăng Long ...
+            a(href="") Read more
+
+      .blog-customer
+        h1.blog-customer__heading Khách hàng
+        img.blog-customer__arrow(src="../assets/images/title_dark.png", alt="")
+        .blog-customer__info
+          i.fa.fa-quote-right
+          p.
+                Vang nổ Thang Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ
+                rượu nhẹ, bột ga đầy trắng mịn.
+                Van nổ Thăng Long ...
+          a(href="") Readmore
+          .blog-customer__info--avatar
+            img(src="../assets/images/avatar_1.png", alt="")
+            h3 giang lt
+            i Graphic design
+          .blog-customer__info--dot
+            a(href="")
+              i.fa.fa-circle
+            a(href="")
+              i.fa.fa-circle
+            a(href="")
+              i.fa.fa-circle
+  // brand logo
+  section.brand
+    .brand-logo.container
+      img(src="../assets/images/brand_logo.png", alt="")
+
+
+              
+
+
+    
+
+    
+
+
+
+
+
+  

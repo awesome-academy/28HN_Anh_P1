@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Pug-Sass Starter</title>
+    <!-- Styles-->
+    <link href="./assets/css/styles.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="app">
+      <section class="header">
+        <div class="container header-nav">
+          <div class="header-nav__menu">
+            <ul class="header-nav__menu-list">
+              <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="#">Tài khoản của tôi  </a></li>
+              <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Trạng thái đơn hàng  </a></li>
+              <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Danh sách ưa thích  </a></li>
+              <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Giỏ hàng  </a></li>
+              <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Đăng nhập  </a></li>
+              <li class="header-nav__menu-item"> <a class="header-nav__menu-link" href="#">Đăng ký </a></li>
+            </ul>
+          </div>
+          <div class="header-nav__search">
+            <input class="header-nav__search-input" type="text" placeholder="Tìm kiếm gì ở đây ..."><i class="fas fa-search"></i>
+          </div>
+        </div>
+      </section>
+      <!-- banner-->
+      <section class="banner">
+        <div class="banner__content container">
+          <h2 class="banner__content--big">Rượu</h2>
+          <h3 class="banner__content--normal">Vang Đỏ</h3>
+          <h4 class="banner__content--small">Since 1980</h4>
+        </div>
+      </section>
+      <!--menu-->
+      <section class="menu">
+        <div class="menu-list container">
+          <div class="menu-list__logo">
+            <div class="menu-list__logo--text">
+              <h2>Wine hourse</h2>
+              <h4>Since 1980</h4><img src="../assets/images/logo.png" alt="">
+            </div>
+            <div class="menu-list__logo--bg"><img src="../assets/images/Vector Smart Object.png" alt=""></div>
+          </div>
+          <div class="menu-list__option">
+            <li class="menu-list__item"><a class="menu-list__link" href="">Trang chủ</a></li>
+            <li class="menu-list__item"><a class="menu-list__link" href="">Riệu Vang Đỏ</a></li>
+            <li class="menu-list__item"><a class="menu-list__link" href="">Rượu Vang Trắng</a></li>
+            <li class="menu-list__item"><a class="menu-list__link" href="">Champagne</a></li>
+            <li class="menu-list__item"><a class="menu-list__link" href="">Thông tin</a></li>
+            <li class="menu-list__item"><a class="menu-list__link" href="">Blog</a></li>
+            <li class="menu-list__item"><a class="menu-list__link" href="">Liên hệ</a></li>
+          </div>
+        </div>
+      </section>
+      <!-- descibe-->
+      <section class="describe"><img class="describe__left" src="../assets/images/introduce.jpg" alt=""><img class="describe__right" src="../assets/images/introduce1.png"  alt="">
+        <div class="describe__text">
+          <h1 class="describe__text--heading">Giới thiệu</h1><img class="describe__text--line" src="../assets/images/title_dark.png"  alt="">
+          <p class="describe__text--content"> Mriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faciteorum claritatem. Investigtiones demonstraverunt lectores legere me lius quod ii legunt saepius.Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putam</p>
+          <button class="describe__text--button">XEM THÊM</button>
+        </div>
+      </section>
+      <!--product-->
+      <section class="product">
+        <div class="container">
+          <div class="product-sale"><img class="product-img" src="../assets/images/hotdeal.jpg" alt="">
+            <div class="product-item">
+              <div class="product-item__img">
+                <div class="product-item__img--box"><img src="../assets/images/hotdeal_box.png" alt=""></div>
+                <div class="product-item__img--span"><span>Sale</span><img src="../assets/images/sale.png" alt=""></div>
+              </div>
+              <div class="product-item__info">
+                <h1 class="product-item__info--heading">RƯỢU NHO NĂM 1987</h1><img class="product-item__info--arrow" src="../assets/images/titleleft-dark.png" alt="">
+                <h3 class="product-item__info--price">330.000</h3>
+                <button class="product-item__info--button">ADD TO CART</button>
+                <p class="product-item__info--des">Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ oxy hóa của protein béo.</p>
+                <div class="product-table">
+                  <div class="product-table__item">
+                    <h4>334</h4>
+                    <h5>ngày</h5>
+                  </div>
+                  <div class="product-table__item">
+                    <h4>26</h4>
+                    <h5>giờ</h5>
+                  </div>
+                  <div class="product-table__item">
+                    <h4>60</h4>
+                    <h5>phút </h5>
+                  </div>
+                  <div class="product-table__item">
+                    <h4>15</h4>
+                    <h5>giây</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- newproduct-->
+      <section class="newproduct">
+        <h1 class="newproduct__headding">SẢN PHẨM MỚI</h1><img class="newproduct__line" src="../assets/images/title_dark.png" alt="">
+        <div class="newproduct__list container">
+          <div class="newproduct-item"><img class="newproduct-item--img" src="../assets/images/newproduct_1.png" alt=""/>
+            <div class="newproduct-bot"><i class="fa fa-heart"> <span>Yêu thích</span></i><i class="fa fa-chart-bar"> <span>So sánh</span></i></div><img class="newproduct-item--span" src="../assets/images/sale2.png" alt=""/><span class="newproduct-item--tag">Sale</span>
+            <h1>Rượu vang Đà lạt</h1>
+            <h3 class="newproduct-item--price">370.000<span class="newproduct-item--saleprice">450.000</span></h3>
+            <button class="newproduct-item--bitton">ADD TO CART</button>
+          </div>
+          <div class="newproduct-item"><img class="newproduct-item--img" src="../assets/images/newproduct_2.png" alt=""/>
+            <div class="newproduct-bot"><i class="fa fa-heart"> <span>Yêu thích</span></i><i class="fa fa-chart-bar"> <span>So sánh</span></i></div><img class="newproduct-item--span" src="../assets/images/new.png" alt=""/><span class="newproduct-item--tag">New</span>
+            <h1>Rượu vang Đà lạt</h1>
+            <h3 class="newproduct-item--price">370.000<span class="newproduct-item--saleprice">450.000</span></h3>
+            <button class="newproduct-item--bitton">ADD TO CART</button>
+          </div>
+          <div class="newproduct-item"><img class="newproduct-item--img" src="../assets/images/newproduct_3.png" alt=""/>
+            <div class="newproduct-bot"><i class="fa fa-heart"> <span>Yêu thích</span></i><i class="fa fa-chart-bar"> <span>So sánh</span></i></div><img class="newproduct-item--span" src="../assets/images/hot.png" alt=""/><span class="newproduct-item--tag">Hot</span>
+            <h1>Rượu vang Đà lạt</h1>
+            <h3 class="newproduct-item--price">370.000<span class="newproduct-item--saleprice">450.000</span></h3>
+            <button class="newproduct-item--bitton">ADD TO CART</button>
+          </div>
+          <div class="newproduct-item"><img class="newproduct-item--img" src="../assets/images/newproduct_4.png" alt=""/>
+            <div class="newproduct-bot"><i class="fa fa-heart"> <span>Yêu thích</span></i><i class="fa fa-chart-bar"> <span>So sánh</span></i></div><img class="newproduct-item--span" alt=""/><span class="newproduct-item--tag"></span>
+            <h1>Rượu vang Đà lạt</h1>
+            <h3 class="newproduct-item--price">370.000<span class="newproduct-item--saleprice">450.000</span></h3>
+            <button class="newproduct-item--bitton">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+      <!-- gallery image-->
+      <section class="gallery" id="gallery">
+        <div class="gallery__img">
+          <div class="gallery__img--item"><img src="../assets/images/staticblock_1.png" alt="staticblock"></div>
+          <div class="gallery__img--des">
+            <p>1987</p>
+            <div class="gallery__img--hover">
+              <div class="gallery__img--hover2">
+                <h1>RƯỢU</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__img">
+          <div class="gallery__img--item"><img src="../assets/images/staticblock_2.jpg" alt="staticblock"></div>
+          <div class="gallery__img--des">
+            <p>1987</p>
+            <div class="gallery__img--hover">
+              <div class="gallery__img--hover2">
+                <h1>RƯỢU</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__img">
+          <div class="gallery__img--item"><img src="../assets/images/staticblock_3.png" alt="staticblock"></div>
+          <div class="gallery__img--des">
+            <p>1987</p>
+            <div class="gallery__img--hover">
+              <div class="gallery__img--hover2">
+                <h1>RƯỢU</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__img">
+          <div class="gallery__img--item"><img src="../assets/images/staticblock_4.png" alt="staticblock"></div>
+          <div class="gallery__img--des">
+            <p>1987</p>
+            <div class="gallery__img--hover">
+              <div class="gallery__img--hover2">
+                <h1>RƯỢU</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__img">
+          <div class="gallery__img--item"><img src="../assets/images/staticblock_5.png" alt="staticblock"></div>
+          <div class="gallery__img--des">
+            <p>1987</p>
+            <div class="gallery__img--hover">
+              <div class="gallery__img--hover2">
+                <h1>RƯỢU</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__img">
+          <div class="gallery__img--item"><img src="../assets/images/staticblock_6.png" alt="staticblock"></div>
+          <div class="gallery__img--des">
+            <p>1987</p>
+            <div class="gallery__img--hover">
+              <div class="gallery__img--hover2">
+                <h1>RƯỢU</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__img">
+          <div class="gallery__img--item"><img src="../assets/images/staticblock_7.png" alt="staticblock"></div>
+          <div class="gallery__img--des">
+            <p>1987</p>
+            <div class="gallery__img--hover">
+              <div class="gallery__img--hover2">
+                <h1>RƯỢU</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__img">
+          <div class="gallery__img--item"><img src="../assets/images/staticblock_8.png" alt="staticblock"></div>
+          <div class="gallery__img--des">
+            <p>1987</p>
+            <div class="gallery__img--hover">
+              <div class="gallery__img--hover2">
+                <h1>RƯỢU</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hot product-->
+      <section class="hotproduct">
+        <h1 class="hotproduct__headding">SẢN PHẨM BÁN CHẠY</h1><img class="hotproduct__line" src="../assets/images/title_dark.png" alt="">
+        <div class="hotproduct__list container">
+          <div class="hotproduct-item"><img class="hotproduct-item--img" src="../assets/images/hotproduct_1.png" alt=""/>
+            <h1>Rượu vang Đà lạt</h1>
+            <h3 class="hotproduct-item--price">370.000<span class="hotproduct-item--saleprice">450.000</span></h3>
+            <button class="hotproduct-item--bitton">ADD TO CART</button>
+          </div>
+          <div class="hotproduct-item"><img class="hotproduct-item--img" src="../assets/images/hotproduct_2.png" alt=""/>
+            <h1>Rượu vang Đà lạt</h1>
+            <h3 class="hotproduct-item--price">370.000<span class="hotproduct-item--saleprice">450.000</span></h3>
+            <button class="hotproduct-item--bitton">ADD TO CART</button>
+          </div>
+          <div class="hotproduct-item"><img class="hotproduct-item--img" src="../assets/images/hotproduct_3.png" alt=""/>
+            <h1>Rượu vang Đà lạt</h1>
+            <h3 class="hotproduct-item--price">370.000<span class="hotproduct-item--saleprice">450.000</span></h3>
+            <button class="hotproduct-item--bitton">ADD TO CART</button>
+          </div>
+          <div class="hotproduct-item"><img class="hotproduct-item--img" src="../assets/images/hotproduct_4.png" alt=""/>
+            <h1>Rượu vang Đà lạt</h1>
+            <h3 class="hotproduct-item--price">370.000<span class="hotproduct-item--saleprice">450.000</span></h3>
+            <button class="hotproduct-item--bitton">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+      <!-- blog-->
+      <section class="blog">
+        <div class="blog-wrap container">
+          <div class="blog-new">
+            <div class="blog-new__header">
+              <h1 class="blog-new__header--heading">Tin tức và blog</h1><img class="blog-new__header--arrow" src="../assets/images/title_dark.png" alt="">
+            </div>
+            <div class="blog-new__list">
+              <div class="blog-new__item"><img src="../assets/images/blog_1.png" alt="">
+                <h2>Vang thang Long classic</h2><span>Đăng bởi Giangle | 30/06/2015 | 60 bình luận</span>
+                <p>
+                  Vang nổ Thang Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ
+                  rượu nhẹ, bột ga đầy trắng mịn.
+                  Van nổ Thăng Long ...
+                </p><a href="">Read more</a>
+              </div>
+              <div class="blog-new__item"><img src="../assets/images/blog_2.png" alt="">
+                <h2>Vang thang Long classic</h2><span>Đăng bởi Giangle | 30/06/2015 | 60 bình luận</span>
+                <p>
+                  Vang nổ Thang Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ
+                  rượu nhẹ, bột ga đầy trắng mịn.
+                  Van nổ Thăng Long ...
+                </p><a href="">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-customer">
+            <h1 class="blog-customer__heading">Khách hàng</h1><img class="blog-customer__arrow" src="../assets/images/title_dark.png" alt="">
+            <div class="blog-customer__info"><i class="fa fa-quote-right"></i>
+              <p>
+                Vang nổ Thang Long có hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả với độ
+                rượu nhẹ, bột ga đầy trắng mịn.
+                Van nổ Thăng Long ...
+              </p><a href="">Readmore</a>
+              <div class="blog-customer__info--avatar"><img src="../assets/images/avatar_1.png" alt="">
+                <h3>giang lt</h3><i>Graphic design</i>
+              </div>
+              <div class="blog-customer__info--dot"><a href=""><i class="fa fa-circle"></i></a><a href=""><i class="fa fa-circle"></i></a><a href=""><i class="fa fa-circle"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- brand logo-->
+      <section class="brand">
+        <div class="brand-logo container"><img src="../assets/images/brand_logo.png" alt=""></div>
+      </section>
+      <section id="footer">
+        <div class="footer-wrapper container">
+          <div class="footer__item">
+            <h1>THÔNG TIN</h1>
+            <div class="footer__item-info">
+              <h2>Về chúng tôi</h2>
+              <h2>Giao hàng</h2>
+              <h2>Cảm nghĩ</h2>
+              <h2>Lưu trữ</h2>
+              <h2>Danh sách </h2>
+            </div>
+          </div>
+          <div class="footer__item">
+            <h1>Mua hang</h1>
+            <div class="footer__item-info">
+              <h2>VẬN chuyển trả hàng</h2>
+              <h2>Mua hàng an toàn</h2>
+              <h2>vận chuyển quốc tế</h2>
+              <h2>Liến kết</h2>
+              <h2>Dịch vụ giảm giá</h2>
+            </div>
+          </div>
+          <div class="footer__email">
+            <h1>Gửi email</h1>
+            <div class="footer__email-input">
+              <p>Gửi email cho chúng tôi để đượng hỗ trợ</p>
+              <div class="footer__item-input__form">
+                <input type="text" name="sendmail" placeholder="Enter your email"><img src="../assets/images/footer_send.png" alt=""><span>Gửi</span>
+              </div>
+              <ul>
+                <li><a href=""><i class="fa fa-dove"></i></a></li>
+                <li><a href=""><i class="fa fa-dove">               </i></a></li>
+                <li><a href=""><i class="fa fa-volleyball-ball">             </i></a></li>
+                <li><a href=""><i class="fa fa-wifi">           </i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__local">
+            <h1>Liên hệ</h1>
+            <div class="footer__item-local">
+              <p><i class="fas fa-map-marker-alt">  Tầng 4,Tòa nhà HaNoi Group Số 442 Đội Cần, P.Cộng Vị, Quận Ba ĐÌnh, Hà Nội.</i><br><i class="fas fa-phone-volume">  (04) 6674 2332 -    </i><i class="fas fa-phone-volume">  (04) 37868904</i><br><i class="fas fa-phone-volume">  (08) 6608 9686      </i><i class="fas fa-envelope"><a href="#">  Support@bizweb.vn</a></i></p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="footer-under container">
+          <div class="footer-under__left">
+            <p>@CoppyRight 2018-2014 DKT Technology JSC</p>
+          </div>
+          <div class="footer-under__right"><img src="../assets/images/footer.png" alt=""></div>
+        </div>
+      </section>
+    </div>
+    <!-- Scripts-->
+    <script src="./assets/js/scripts.min.js"></script>
+  </body>
+</html>
