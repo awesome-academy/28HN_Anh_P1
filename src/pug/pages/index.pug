@@ -44,11 +44,24 @@ block content
           img(src="../assets/images/logo.png", alt="")
         .menu-list__logo--bg
           img(src="../assets/images/Vector Smart Object.png", alt="")
-        
-      .menu-list__option
-        each item in list 
-          li.menu-list__item
-            a(href="").menu-list__link= item
+      .menu__list
+        a.menu__list-item(href="#") Trang chủ
+        .menu__mega
+          a.menu__list-item(href="#") Rượu vang đỏ
+            .menu__submenu
+              - for (var i = 0; i < 3; i++)
+                .menu__submenu-list
+                    a.menu__submenu-list-title: h3 Rượu ngoại 
+                    - submenuItems = ["Rượu Chivas", "Hàng độc - Rượu độc đáo", "Johnnie Walker", "Rượu Whisky", "Rượu Remy Martin", "Rượu Glenmorangie"]
+                    each val in submenuItems
+                        a=val
+              .menu__submenu-image
+                img(src="../assets/images/mega.png", alt="")
+        a.menu__list-item(href="#") Rượu vang trắng
+        a.menu__list-item(href="#") Chanpagne
+        a.menu__list-item(href="#") Thông tin 
+        a.menu__list-item(href="#") Blog
+        a.menu__list-item(href="#") Liên hệ
   // descibe
   section.describe
     img.describe__left(src="../assets/images/introduce.jpg", alt="")

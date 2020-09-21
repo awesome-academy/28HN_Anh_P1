@@ -39,12 +39,14 @@
     &-list
         @include flex
         padding-top: 15px  
+        position: relative
         &__logo
             position: relative
+            padding-left:  15px
             &--bg
                 position: absolute
                 top: 0
-                left: 18px
+                left: 36px
             &--text
                 text-align: center
                 margin-top: 32px
@@ -76,6 +78,61 @@
                 &:last-child
                     .menu-list__link
                         padding-right: 0
+        .menu__list
+            @include flex
+            padding-right: 15px
+            &-item 
+                font-family: 'Times New Roman', Times, serif
+                font-size: 13px
+                font-weight: 200
+                color: white
+                text-transform: uppercase
+                margin-left: 50px
+
+                &:last-child
+                        margin-right: 0
+            .menu__mega
+                &:hover
+                    .menu__submenu
+                        visibility: visible
+                        opacity: 1
+                .menu__submenu 
+                    position: absolute
+                    display: flex
+                    background-color: white
+                    padding: 20px 30px
+                    z-index: 1000
+                    top: 160px
+                    left: 16.66667%
+                    width: 80%
+                    margin-left: 15px
+                    border: solid 1px $color_yelow
+                    visibility: hidden
+                    opacity: 0
+                    transition: opacity 1s, visibility 1s
+                    &-list
+                        flex: 1
+                        &-title 
+                            text-transform: uppercase
+                            cursor: pointer
+                            color: black
+                        a
+                            display: block
+                            padding-top: 10px
+                            color: black   
+                            font-size: 14px
+                    &-image
+                        flex: 2
+                        background-size: cover 
+               
+                    
+                
+            
+        
+                                    
+                   
+                        
+                
 //describe
 .describe
     position: relative
@@ -87,7 +144,9 @@
         z-index: -1
         
     &__right
-        @include position
+        position: absolute
+        top: 0
+        right: 0
         width: 180px
         height: auto
         
@@ -510,6 +569,8 @@
     margin: 50px 10px
 
 // brand
+.brand-logo
+    text-align: center
 
                           
                         
