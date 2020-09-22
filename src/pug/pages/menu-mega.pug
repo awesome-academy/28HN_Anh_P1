@@ -1,0 +1,29 @@
+block menu-mega
+    - var list = ["Trang chủ","Riệu Vang Đỏ","Rượu Vang Trắng","Champagne","Thông tin","Blog","Liên hệ"]
+section.menu
+    .menu-list.container
+        .menu-list__logo
+            .menu-list__logo--text
+                h2 Wine hourse
+                h4 Since 1980
+                img(src="../assets/images/logo.png", alt="")
+            .menu-list__logo--bg
+                img(src="../assets/images/Vector Smart Object.png", alt="")
+        .menu__list
+            a.menu__list-item(href="#") Trang chủ
+            .menu__mega
+                a.menu__list-item(href="#") Rượu vang đỏ
+                .menu__submenu
+                    - for (var i = 0; i < 3; i++)
+                        .menu__submenu-list
+                            a.menu__submenu-list-title: h3 Rượu ngoại 
+                                - submenuItems = ["Rượu Chivas", "Hàng độc - Rượu độc đáo", "Johnnie Walker", "Rượu Whisky", "Rượu Remy Martin", "Rượu Glenmorangie"]
+                                    each val in submenuItems
+                                        a=val
+                    .menu__submenu-image
+                        img(src="../assets/images/mega.png", alt="")
+            a.menu__list-item(href="#") Rượu vang trắng
+            a.menu__list-item(href="#") Chanpagne
+            a.menu__list-item(href="#") Thông tin 
+            a.menu__list-item(href="#") Blog
+            a.menu__list-item(href="#") Liên hệ

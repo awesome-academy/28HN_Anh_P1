@@ -1,0 +1,113 @@
+extends ../base/base.pug
+include ../base/mixins.pug
+block layout
+
+    header
+        .header-white
+            include ../partials/header.pug
+    block content
+        block menu-mega
+        include menu-mega.pug
+        section.detailproduct.container
+            +pagetag(["Trang chủ", "Sản phẩm", "Rượu vang đỏ"])
+            .detail
+                .detail__list
+                    a(href="#") 
+                        i.fas.fa-arrow-up
+                    each val in [5, 6, 7, 8, 9]
+                        a(href="#"): img(src="../assets/images/" + val + ".jpg")   
+                    a(href="#") 
+                        i.fas.fa-arrow-down
+                .detail__img
+                    img(src="../assets/images/7.jpg", alt="")
+                .detail__des
+                    +titleItem
+                    .detail__des-reviews
+                        .detail-stars
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star-half
+                            i.far.fa-star
+                            a.detail__des-comment 1 Review(S)
+                            span |
+                            a.detail__des-comment Add yor review
+                    form.detail-option
+                        .detail-option--color 
+                            label(for="color") Màu sắc 
+                            input(type="radio" name="color" value="champange")
+                            input(type="radio" name="color" value="black")
+                            input(type="radio" name="color" value="cherry" checked)
+                        .detail-option--size 
+                            label(for="size") Kích cỡ
+                            select#size(name="size")
+                                each val in ["Loại to", "Loại vừa", "Loại nhỏ"]
+                                    option(value=val)=val
+                        .detail-option--quantity 
+                            label(for="quantity") Số lượng
+                            .detail__des-option-form
+                                button -
+                                input(type="number" min="1" step="1" value="1")
+                                button +
+                                button.btn ADD TO CART
+                    .detail__des-content
+                        label Mô tả
+                        p Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.
+                    .detail__des-social 
+                        .detail-social--facebook
+                            button
+                                i.fab.fa-facebook-square
+                                span Like
+                            span.span 0
+                        .detail-social--twitter
+                            button
+                                i.fab.fa-twitter
+                                span Tweet
+                            span.span 0
+                        .detail-social--google
+                            button
+                                i.fab.fa-google-plus-g
+                                span +1
+                            span.span 0
+                        .detail-social--linked
+                            button
+                                i.fab.fa-linkedin-in
+                                span Share
+                            
+                        .detail-social--pin
+                            button
+                                i.fab.fa-pinterest-p
+                                span Pin it
+        section.info.container
+            .info__content
+                .info__content-btn
+                    button.info__content-btn--active Đặc điểm nổi bật 
+                    button.info__content-btn--unactive Thông tin sản phẩm 
+                    button.info__content-btn--unactive Đánh giá
+                .info__content-desc
+                    p Đừng nghĩ rằng chỉ vì đôi chân to mà bạn không thể mặc được món đồ nào khác ngoài quần dài. Sau đây là những item vừa trendy lại vừa có tác dụng rất hiệu quả trong việc điều chỉnh đôi chân to của bạn.Mùa hè là mùa của những bộ cánh thoải mái, thoáng mát và hẳn cô gái nào cũng muốn khoe chân tối đa. Tuy nhiên, điều này lại không hề dễ dàng đối với những cô nàng sở hữu đôi chân to.Đừng nghĩ rằng chỉ vì đôi chân to mà bạn không thể mặc được món đồ nào khác ngoài quần dài. Sau đây là những item vừa trendy lại vừa có tác dụng rất hiệu quả trong việc điều chỉnh đôi chân to của bạn. Mùa hè là mùa của những bộ cánh thoải mái, thoáng mát và hẳn cô gái nào cũng muốn khoe chân tối đa. Tuy nhiên, điều này lại không hề dễ dàng đối với những cô nàng sở hữu đôi chân to. Vậy diện đồ thế nào để vừa tạo cảm giác nhẹ nhàng nhưng lại khéo léo giấu được nhược điểm ấy? Sau đây, chúng tôi xin đưa ra gợi ý về loạt item mà các cô nàng chân to nên gắn bó trong mùa hè này.
+            .info__img
+                img(src="../assets/images/staticblock_6.png", alt="")
+                h1 RƯỢU NHO
+          
+        section.newproduct
+            h1.newproduct__headding Sản phẩm liên quan
+            img.newproduct__line(src="../assets/images/title_dark.png", alt="")
+            .newproduct__list.container
+                +productItem("../assets/images/newproduct_1.png","../assets/images/sale2.png","Sale")
+                +productItem("../assets/images/newproduct_2.png","../assets/images/new.png","New")
+                +productItem("../assets/images/newproduct_3.png","../assets/images/hot.png","Hot")
+                +productItem("../assets/images/newproduct_4.png")
+
+            
+                            
+                        
+
+
+
+
+
+    include ../partials/footer.pug
+    
+
+        

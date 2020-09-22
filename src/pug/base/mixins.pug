@@ -1,0 +1,31 @@
+mixin productItem(img,tag,span)
+  .newproduct-item
+    img.newproduct-item--img(src=img, alt="")
+    .newproduct-bot
+      i.fa.fa-heart 
+        span Yêu thích
+      i.fa.fa-chart-bar 
+        span So sánh
+    img.newproduct-item--span(src=tag, alt="")
+    span.newproduct-item--tag= span
+    a(href="detail.html") Rượu vang Đà lạt
+    h3.newproduct-item--price 370.000
+      span.newproduct-item--saleprice 450.000
+    button.newproduct-item--bitton ADD TO CART
+
+mixin productHotItem(img)
+  .hotproduct-item
+    img.hotproduct-item--img(src=img, alt="")
+    a(href="detail.html") Rượu vang Đà lạt
+    h3.hotproduct-item--price 370.000
+      span.hotproduct-item--saleprice 450.000
+    button.hotproduct-item--bitton ADD TO CART
+mixin pagetag(links)
+  .tag
+    - for (var i = 0; i < links.length; i++) 
+      a.tag__item(href="#")=links[i] 
+      span /
+mixin titleItem
+  h1.product-item__info--heading RƯỢU NHO NĂM 1987
+  img.product-item__info--arrow(src="../assets/images/titleleft-dark.png", alt="")
+  h3.product-item__info--price 330.000đ

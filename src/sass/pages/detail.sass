@@ -1,0 +1,206 @@
+/// product-detail
+.header-white 
+    padding: 10px 0px
+.detailproduct
+    padding: 0 15px
+    margin-bottom: 100px
+    .detail 
+        display: flex
+        .detail__list
+            width: 8.3333333333%
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            border: 1px solid $border-color
+            border-right: none
+            padding: 0 15px
+            a   
+                display: block
+                padding: 20px 10px
+                border-bottom: 1px solid $border-color
+                
+            a:nth-child(6)
+                border: none
+            a:last-child
+                border: none
+            a:first-child
+                border: none
+            a:nth-child(4)
+                img
+                    border: 1px solid $color_yelow
+            img 
+                width: 100%
+                &:hover
+                    border: 1px solid $color_yelow
+        .detail__img
+            flex: 50%
+            border: 1px solid $border-color
+        .detail__des
+            flex: 41.666666667%
+            padding-left:  15px
+            .detail__des-reviews
+                border-bottom: 1px solid $border-color
+                border-top: 1px solid $border-color
+                color: $color_text
+                margin-bottom: 10px 
+                
+                .detail-stars
+                    padding: 15px 0
+                    i,a,span
+                        margin-right: 5px
+                        color: $color_text
+            .detail-option
+                .detail-option--color
+                    margin-bottom: 10px
+                    input
+                        width: 30px
+                        height: 30px
+                        cursor: pointer
+                        position: relative
+                        &::after
+                            content: ""
+                            position: absolute
+                            top: 0
+                            left: 0
+                            width: 100%
+                            height: 100%
+                            border: 2px solid white
+                        
+                        &[value=champange]::after
+                            background-color: $red_color
+                        &[value=black]::after
+                            background-color: black
+                        &[value=cherry]::after
+                            background-color: $color_yelow
+                        &:checked::after, &:hover::after
+                            outline: 1px solid black
+                .detail-option--size 
+                    margin-bottom: 1rem
+                    select
+                       
+                        padding: 5px
+                        outline: none
+                        color: $color_text
+                        border-color: $color_text
+                        font-size: 11px 
+                .detail-option--quantity 
+                    margin-bottom: 1rem
+                    .detail__des-option-form
+                        button
+                            font-size: 6px
+                            width: 20px
+                            background: $color_text
+                            border-radius: 0px
+                        button:last-child
+                            background-color: black
+                            width: 40%
+                            margin-left: 30px
+                            font-size: 14px
+                            &:hover
+                                background-color: $color_yelow
+                        input
+                            width: 40px
+                            padding: 0 10px
+                            text-align: centers
+                            border: solid 3px $color_text
+                            border-radius: 0px
+
+                            color: $color_text
+
+
+                        display: flex 
+                        text-align: center
+                        input 
+            .detail__des-content
+                p
+                    margin-bottom: 20px
+                    color: $color_text           
+            .detail__des-social 
+                display: flex
+                justify-content: space-between
+                .detail-social--facebook
+                    +socialButton(white,white,#4965b5 )
+                    .span
+                        border: 1px solid $border_color
+                        margin-left: 10px
+                        padding: 2px 6px
+                .detail-social--facebook
+                .detail-social--twitter
+                    +socialButton(white,white,#00acee )
+                    .span
+                        border: 1px solid $border_color
+                        margin-left: 10px
+                        padding: 2px 6px
+                .detail-social--google
+                    +socialButton(#e88476,black,white)
+                    .span
+                        border: 1px solid $border_color
+                        margin-left: 10px
+                        padding: 0px 6px
+                    button
+                        border: 1px solid $border_color
+                        
+                .detail-social--linked
+                    +socialButton(white,white,#0077b5)
+                .detail-social--pin
+                    +socialButton(#be1d2b,#be1d2b,white)
+                    button
+                        border: 1px solid $border_color
+
+        label
+            color: $color_text
+            text-transform: uppercase
+            display: block
+            font-size: 1.3rem
+            margin-bottom: 1rem
+// describe detail
+.info
+    display: flex
+    justify-content: space-between
+    padding: 0 15px
+    margin-bottom: 100px
+    .info__content
+        width: 58.333333333%
+        .info__content-btn
+            display: flex
+            margin-bottom: 20px
+            .info__content-btn--active
+                background-color: $color_yelow
+            button
+                background-color: white
+                font-size: 13px
+                color: $color_text
+                text-transform: uppercase
+                padding: 10px 10px
+                margin-right: 10px
+                font-weight: 300
+                outline: none
+                &:hover
+                     background-color: $color_yelow
+                     
+        .info__content-desc
+            p
+                color: $color_text
+                line-height: 1.2
+                
+                    
+            
+    .info__img
+        width: 33.333333333%
+        position: relative
+        img
+            width: 100%
+            
+        h1 
+            position: absolute
+            @include transform
+            color: white
+            font-size: 32px
+            font-weight: 300
+            
+
+
+          
+        
+        
